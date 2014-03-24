@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/eng_header" android:id="@+id/include_header" />
+    <include layout="@layout/eng_footer" android:id="@+id/include_footer" />
+
+    <RelativeLayout
+        android:layout_below="@+id/include_header"
+        android:layout_above="@+id/include_footer"
+        android:layout_width="1280dp"
+        android:layout_height="636dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/videosbg"
+        >
+        <ImageButton
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/fav" />
+
+        <ImageButton
+            android:layout_width="97dp"
+            android:layout_height="81dp"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/moatvisites"
+            android:layout_below="@+id/imageButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageButton
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageButton3"
+            android:layout_below="@+id/imageButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/morerecent"
+            android:layout_marginLeft="5dp"/>
+
+        <VideoView
+            android:layout_width="693dp"
+            android:layout_height="413dp"
+            android:id="@+id/videoView"
+            android:layout_alignTop="@+id/imageButton"
+            android:layout_toRightOf="@+id/imageButton"
+            android:layout_marginLeft="56dp" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dental screening that could save your lives"
+        android:id="@+id/textView"
+        android:layout_marginLeft="27dp"
+        android:textColor="@color/textbody"
+        android:layout_alignTop="@+id/videoView"
+        android:layout_toRightOf="@+id/videoView"
+        android:layout_above="@+id/imageButton2" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="We all know about the importance of sleep, and we know we should be getting more of it."
+        android:id="@+id/textView2"
+        android:textColor="@color/textbody"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+        <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="166dp"
+        android:id="@+id/horizontalScrollView2">
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/videoView"
+        android:layout_alignStart="@+id/videoView"
+        android:layout_marginBottom="37dp"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/buttonURL"
+        android:src="@drawable/v1" />
+        <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton22"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/v2"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout" />
+
+        <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton23"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/v3"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout" />
+        <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton24"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/v4"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout" />
+        <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton25"
+        android:src="@drawable/v5" />
+        <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton26"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/v6"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout" />
+
+        <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton27"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/v7"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout" />
+        <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton28"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/v8"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout" />
+        </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

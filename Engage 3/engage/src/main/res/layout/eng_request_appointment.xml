@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/eng_header" android:id="@+id/include_header" />
+    <include layout="@layout/eng_footer" android:id="@+id/include_footer" />
+
+    <RelativeLayout
+
+        android:layout_below="@+id/include_header"
+        android:layout_above="@+id/include_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+
+        >
+    <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="1250dp"
+            android:layout_height="570dp "
+            android:layout_marginLeft="15dp"
+            android:background="#ffffff"
+            >
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="50dp"
+                android:id="@+id/appointment_req_bgimg"
+                android:background="@drawable/talktousbg"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Appointment Request"
+                android:id="@+id/textView"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:layout_marginLeft="166dp"
+                android:layout_alignTop="@+id/appointment_req_bgimg"
+                android:layout_alignLeft="@+id/appointment_req_bgimg"
+                android:layout_alignStart="@+id/appointment_req_bgimg"
+                android:layout_marginTop="7dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/appointment_req_firstandlastname"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000"
+                android:hint="First and Last Name"
+                android:textSize="20dp"
+                android:layout_below="@+id/appointment_req_bgimg"
+                android:layout_alignLeft="@+id/appointment_req_bgimg"
+                android:layout_alignStart="@+id/appointment_req_bgimg"
+                android:layout_alignRight="@+id/appointment_req_bgimg"
+                android:layout_alignEnd="@+id/appointment_req_bgimg" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/appointment_req_phonenumber"
+                android:hint="Phone Number"
+                android:textSize="20dp"
+                android:layout_below="@+id/appointment_req_firstandlastname"
+                android:layout_alignLeft="@+id/appointment_req_firstandlastname"
+                android:layout_alignStart="@+id/appointment_req_firstandlastname"
+                android:layout_marginTop="12dp"
+                android:layout_alignRight="@+id/appointment_req_firstandlastname"
+                android:layout_alignEnd="@+id/appointment_req_firstandlastname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date of Birth"
+                android:id="@+id/textView2"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_below="@+id/appointment_req_phonenumber"
+                android:layout_alignLeft="@+id/appointment_req_phonenumber"
+                android:layout_alignStart="@+id/appointment_req_phonenumber" />
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/appointment_dateofbirth"
+                android:layout_below="@+id/textView2"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1st Choice"
+                android:id="@+id/textView3"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_below="@+id/appointment_dateofbirth"
+                android:layout_alignLeft="@+id/appointment_dateofbirth"
+                android:layout_alignStart="@+id/appointment_dateofbirth" />
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/appointment_firstchoice"
+                android:layout_below="@+id/textView3"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_alignRight="@+id/appointment_dateofbirth"
+                android:layout_alignEnd="@+id/appointment_dateofbirth" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="2nd choice"
+                android:id="@+id/textView4"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_above="@+id/appointment_firstchoice"
+                android:layout_alignRight="@+id/textView"
+                android:layout_alignEnd="@+id/textView" />
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/appointment_secondchoice"
+                android:layout_below="@+id/textView4"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4" />
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="230dip"
+            android:layout_height="40dip"
+
+            android:padding="0dp"
+            android:layout_below="@+id/appointment_firstchoice"
+            android:layout_alignLeft="@+id/appointment_firstchoice"
+            android:layout_alignStart="@+id/appointment_firstchoice"
+            android:layout_alignRight="@+id/appointment_firstchoice"
+            android:layout_alignEnd="@+id/appointment_firstchoice"
+            android:id="@+id/linearLayout">
+           <its.org.engage.custom_controls.SegmentedRadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:id="@+id/segment_choice1"
+
+
+               android:padding="0dp"
+               android:layout_marginLeft="5dp"
+               >
+
+               <RadioButton android:id="@+id/btn_choice1_AM"
+                   android:minWidth="70dip"
+                   android:minHeight="40dip"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text="AM"
+                   android:textAppearance="?android:attr/textAppearanceSmall"
+                   android:button="@null"
+                   android:gravity="center"
+                   android:textSize="18dp"
+                   android:textColor="@color/radio_colors" />
+               <RadioButton android:id="@+id/btn_choice1_MidDay"
+                   android:minWidth="70dip"
+                   android:minHeight="40dip"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text="Mid-day"
+                   android:button="@null"
+                   android:gravity="center"
+                   android:textSize="18dp"
+                   android:textAppearance="?android:attr/textAppearanceSmall"
+                   android:textColor="@color/radio_colors" />
+               <RadioButton android:id="@+id/btn_choice1_Afternoon"
+                   android:minWidth="70dip"
+                   android:minHeight="40dip"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text="Afternoon"
+                   android:button="@null"
+                   android:textSize="18dp"
+                   android:gravity="center"
+                   android:textAppearance="?android:attr/textAppearanceSmall"
+                   android:textColor="@color/radio_colors" />
+
+               </its.org.engage.custom_controls.SegmentedRadioGroup>
+
+
+            </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="230dip"
+            android:layout_height="40dip"
+
+            android:padding="0dp"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_alignLeft="@+id/appointment_secondchoice"
+            android:layout_alignStart="@+id/appointment_secondchoice"
+            android:layout_alignRight="@+id/appointment_secondchoice"
+            android:layout_alignEnd="@+id/appointment_secondchoice"
+            android:id="@+id/linearLayout2">
+            <its.org.engage.custom_controls.SegmentedRadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/segment_choice2"
+             android:padding="0dp"
+                android:layout_marginLeft="5dp"
+                >
+                <RadioButton android:id="@+id/btn_choice2_AM"
+                    android:minWidth="70dip"
+                    android:minHeight="40dip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="AM"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/radio_colors" />
+                <RadioButton android:id="@+id/btn_choice2_MidDay"
+                    android:minWidth="70dip"
+                    android:minHeight="40dip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Mid-day"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/radio_colors" />
+                <RadioButton android:id="@+id/btn_choice2_Afternoon"
+                    android:minWidth="70dip"
+                    android:minHeight="40dip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Afternoon"
+                    android:button="@null"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/radio_colors" />
+
+            </its.org.engage.custom_controls.SegmentedRadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="*Our staff will work to find an available slot to fit your preferences and contact you to confirm your appointment. ..."
+            android:id="@+id/textView5"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout"
+            android:textColor="#101010"
+            android:layout_alignRight="@+id/linearLayout2"
+            android:layout_alignEnd="@+id/linearLayout2"
+            android:layout_alignParentBottom="true"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

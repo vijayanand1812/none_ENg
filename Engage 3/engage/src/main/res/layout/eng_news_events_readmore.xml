@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/eng_header" android:id="@+id/include_header" />
+    <include layout="@layout/eng_footer" android:id="@+id/include_footer" />
+
+    <RelativeLayout
+        android:id="@+id/readmores"
+        android:layout_below="@+id/include_header"
+        android:layout_above="@+id/include_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+
+        >
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="1250dp"
+            android:layout_height="570dp "
+            android:layout_marginLeft="15dp"
+            android:background="#e9e8eb"
+            >
+
+            <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/closebtn"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="18dp"
+            android:onClick="close_readmore" />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

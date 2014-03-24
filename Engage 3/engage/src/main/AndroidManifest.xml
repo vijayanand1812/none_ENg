@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="its.org.engage" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+
+        >
+        <activity
+            android:name="its.org.engage.Eng_login"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="its.org.engage.Eng_menu"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+            </activity>
+
+        <activity
+            android:name="its.org.engage.End_Downloading"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+        </activity>
+        <activity
+        android:name="its.org.engage.Eng_NewsandEvents"
+        android:label="@string/app_name"
+        android:screenOrientation="landscape"
+
+        >
+    </activity>
+
+        <activity
+            android:name="its.org.engage.Eng_NewsandEvents_Upcoming_Events"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+        </activity>
+
+        <activity
+            android:name="its.org.engage.Eng_NewsEvents_ReadMore"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+        </activity>
+        <activity
+            android:name="its.org.engage.Eng_Ourvideos"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+        </activity>
+
+        <activity
+            android:name="its.org.engage.Eng_Talk_To_Us"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+        </activity>
+
+        <activity
+            android:name="its.org.engage.Eng_Tell_a_Friend"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+        </activity>
+        <activity
+            android:name="its.org.engage.Eng_RequestAppontment"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+        </activity>
+
+    </application>
+
+</manifest>

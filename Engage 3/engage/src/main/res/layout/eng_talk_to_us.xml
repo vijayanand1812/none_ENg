@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/eng_header" android:id="@+id/include_header" />
+    <include layout="@layout/eng_footer" android:id="@+id/include_footer" />
+
+    <RelativeLayout
+        android:id="@+id/readmores"
+        android:layout_below="@+id/include_header"
+        android:layout_above="@+id/include_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+
+        >
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="1250dp"
+            android:layout_height="570dp "
+            android:layout_marginLeft="15dp"
+            android:background="#ffffff"
+            >
+
+        <ImageView
+            android:layout_width="1100dp"
+            android:layout_height="57dp"
+            android:id="@+id/imageView"
+            android:background="@drawable/talktousbg"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Talk To Us!"
+            android:id="@+id/textView"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#ffffff"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="We want to hear from you!"
+            android:id="@+id/textView2"
+            android:layout_marginTop="17dp"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Please share any thoughts,suggestions or questions you may have."
+            android:id="@+id/textView3"
+            android:textSize="23dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="128dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/talktous_txtusersuggesions"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginTop="19dp"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="If you would like a response from us,please provide the information below:"
+            android:id="@+id/textView4"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/talktous_txtusersuggesions"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/talktous_txtfirstnamelastname"
+            android:layout_marginTop="31dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignLeft="@+id/talktous_txtusersuggesions"
+            android:layout_alignStart="@+id/talktous_txtusersuggesions"
+            android:layout_marginLeft="35dp"
+            android:layout_alignRight="@+id/talktous_txtusersuggesions"
+            android:layout_alignEnd="@+id/talktous_txtusersuggesions"
+            android:hint="First and Last Name" />
+
+        <EditText
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/talktous_txtemail"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/talktous_txtfirstnamelastname"
+            android:layout_alignLeft="@+id/talktous_txtfirstnamelastname"
+            android:layout_alignStart="@+id/talktous_txtfirstnamelastname"
+            android:hint="Email" />
+
+        <EditText
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/talktous_txtphone"
+            android:layout_alignTop="@+id/talktous_txtemail"
+            android:layout_alignRight="@+id/talktous_txtusersuggesions"
+            android:layout_alignEnd="@+id/talktous_txtusersuggesions"
+            android:hint="Phone" />
+
+        <ImageButton
+            android:layout_width="230dp"
+            android:layout_height="45dp"
+            android:id="@+id/talktous_submitbtn"
+            android:background="@drawable/talktous_submitbtn"
+            android:layout_below="@+id/talktous_txtemail"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="15dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</RelativeLayout>

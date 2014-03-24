@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000" android:padding="0dp">
+
+
+    <include layout="@layout/eng_header" android:id="@+id/include_header" />
+    <include layout="@layout/eng_footer" android:id="@+id/include_footer" />
+
+<RelativeLayout
+    android:layout_below="@+id/include_header"
+    android:layout_above="@+id/include_footer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ImageButton
+        android:layout_width="230dp"
+        android:layout_height="241dp"
+        android:id="@+id/imageButton"
+
+       android:background="@drawable/newsevents"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="90dp"
+        android:onClick="News_Events_Button" />
+
+    <ImageButton
+        android:layout_width="230dp"
+        android:layout_height="241dp"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/myformsinfo"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="380dp"
+        android:onClick="Myfoms_Button" />
+
+    <ImageButton
+        android:layout_width="230dp"
+        android:layout_height="241dp"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/requestappointment"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="670dp"
+        android:onClick="Request_Apponment_button" />
+
+    <ImageButton
+        android:layout_width="230dp"
+        android:layout_height="241dp"
+        android:id="@+id/imageButton4"
+        android:background="@drawable/talktous"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="960dp"
+        android:onClick="Talk_ToUs_Button" />
+
+    <ImageButton
+        android:layout_width="230dp"
+        android:layout_height="241dp"
+        android:id="@+id/imageButton5"
+        android:background="@drawable/tellafriend1"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="90dp"
+        android:onClick="Tella_Friend_Button" />
+
+    <ImageButton
+        android:layout_width="230dp"
+        android:layout_height="241dp"
+        android:id="@+id/imageButton6"
+        android:background="@drawable/patientsurvey"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="380dp"
+        android:onClick="Patient_Survey_Button" />
+
+    <ImageButton
+        android:layout_width="230dp"
+        android:layout_height="241dp"
+        android:id="@+id/imageButton7"
+        android:background="@drawable/ourvideos"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="670dp"
+        android:onClick="Our_Videos_button" />
+
+    <ImageButton
+        android:layout_width="230dp"
+        android:layout_height="241dp"
+        android:id="@+id/imageButton8"
+        android:background="@drawable/triviagame"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="960dp"
+        android:onClick="Trivia_Game_Button" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabsbarbg" />
+
+    <Button
+    android:layout_width="170dp"
+    android:layout_height="45dp"
+    android:text="News Link"
+    android:id="@+id/btnnewslink"
+    android:layout_marginTop="530dp"
+    android:layout_marginLeft="160dp"
+        android:textColor="#ffffff"
+    android:background="@drawable/bottombutton"
+        android:textColorHighlight="#ffffff"
+        android:textSize="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:text="Games"
+        android:id="@+id/btngame"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="360dp"
+        android:background="@drawable/bottombutton"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:text="Browse the Web"
+        android:id="@+id/btnbrowsetheweb"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="560dp"
+        android:background="@drawable/bottombutton"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:text="Email"
+        android:id="@+id/btnemail"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="760dp"
+        android:background="@drawable/bottombutton"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center" />
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:text="Connect"
+        android:id="@+id/btnemail"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="960dp"
+        android:background="@drawable/bottombutton"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center" />
+
+</RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="82dp"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:background="@drawable/headerbg" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="82dp"-->
+        <!--android:id="@+id/imageView2"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:background="@drawable/footerbg" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="89dp"-->
+        <!--android:id="@+id/imageView3"-->
+        <!--android:background="@drawable/tabsbarbg"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_above="@+id/imageView2" />-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_above="@+id/imageView3"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_below="@+id/imageView">-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:background="@drawable/newsevents"-->
+           <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--/>-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:background="@drawable/myformsinfo"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_marginLeft="380dp"-->
+            <!--/>-->
+        <!--<ImageButton-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:id="@+id/imageButton"-->
+        <!--android:background="@drawable/requestpppointment"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_marginLeft="680dp"-->
+        <!--/>-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:background="@drawable/talktous"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_marginLeft="980dp"-->
+            <!--/>-->
+
+        <!--<ImageButton-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:id="@+id/imageButton"-->
+        <!--android:background="@drawable/tellafriend1"-->
+        <!--android:layout_marginTop="260dp"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--/>-->
+        <!--<ImageButton-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:background="@drawable/patientsurvey"-->
+            <!--android:layout_marginTop="260dp"-->
+            <!--android:layout_marginLeft="380dp"-->
+            <!--/>-->
+        <!--<ImageButton-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:background="@drawable/ourvideos"-->
+            <!--android:layout_marginTop="260dp"-->
+            <!--android:layout_marginLeft="680dp"-->
+            <!--/>-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:background="@drawable/ourvideos"-->
+            <!--android:layout_marginTop="260dp"-->
+            <!--android:layout_marginLeft="980dp"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

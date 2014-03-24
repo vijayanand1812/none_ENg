@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/eng_header" android:id="@+id/include_header" />
+    <include layout="@layout/eng_footer" android:id="@+id/include_footer" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/upcomingevents"
+            android:layout_below="@+id/include_header"
+            android:layout_above="@+id/include_footer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+
+            >
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="1250dp"
+                android:layout_height="570dp "
+                android:layout_marginLeft="15dp"
+                android:background="#e9e8eb"
+                >
+
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

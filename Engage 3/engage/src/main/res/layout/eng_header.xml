@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="82dp" android:background="#fff" android:id="@+id/headerbg" android:layout_marginTop="0dp" android:layout_alignParentTop="true">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/headerbg" />
+
+    <ImageButton
+        android:layout_width="41dp"
+        android:layout_height="65dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/engagelogo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+
+        android:onClick="gotomenu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The Garage Hospital"
+        android:id="@+id/textView"
+
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="20dp"
+       android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="152dp"
+        android:textColor="#fae074"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtdate"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignRight="@+id/textClock"
+        android:layout_alignEnd="@+id/textClock"
+        android:textColor="#90d3f7"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Tex"
+        android:id="@+id/txttemp"
+        android:layout_alignTop="@+id/txtdate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
